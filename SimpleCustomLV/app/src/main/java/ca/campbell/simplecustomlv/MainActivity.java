@@ -81,6 +81,8 @@ public class MainActivity extends Activity {
 				vh.iv = (ImageView) row.findViewById(R.id.itemIV);
 				vh.tv.setText(listDogs[position]);
 				vh.iv.setImageResource(listIdDogs[position]);
+				// use the tag to ccmmunicate the viewholder we used, when it
+				// is no longer new (see else)
 				row.setTag(vh);
 				// can set the listener here if I want to
 			} else {
